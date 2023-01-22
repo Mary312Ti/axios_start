@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="forms-wrapper">
+        <div class="form-block">
+            <div class="form-block_item">
+                <h2 class="form-block_item__title">Login</h2>
+                <button class="form-block_item__btn signin-btn">Login</button>
+            </div>
+            <div class="form-block_item">
+                <h2 class="form-block_item__title">Register</h2>
+                <button class="form-block_item__btn signup-btn">Join</button>
+            </div>
+        </div>
+        <div class="form-box">
+            <form class="form-login" action="" method="post">
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="Email" id="email_login" required>
+                <input type="password" name="password password-join" placeholder="Password" id="password">
+                <button type="submit" class="submit-btn">login</button>
+            </form>
+            <form class="form-join" action="" method="post">
+                <h2>Join</h2>
+                <input type="text" name="first_name" placeholder="First name" id="first_name" required>
+                <input type="text" name="last_name" placeholder="Last name" id="last_name" required>
+                <input type="email" name="email" placeholder="Email" id="email_join" required>
+                <div class="file-btn">
+                    <label for="file" class="file-label">Select a file
+                        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png">
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Join</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
